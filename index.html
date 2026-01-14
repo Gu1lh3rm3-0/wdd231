@@ -5,14 +5,17 @@
     <meta name="description" content="Guilherme Oliveira's WDD231 Website">
     <meta name="author" content="Guilherme Oliveira">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="script/index.js" defer></script>
     <title>Guilherme Oliveira - WDD231</title>
 </head>
 <body>
     <header>
         <img src="images/website_logo.svg" alt="Website Logo" width="100" height="100">
         <span>Guilherme Oliveira - WDD231</span>
+        <a id="menu" href="#"></a>
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="chamber.html">Chamber</a></li>
                 <li><a href="final.html">Final Project</a></li>
@@ -23,24 +26,34 @@
         <h1>Home</h1>
         <section>
             <h2>About Me</h2>
-            <p>Hello, my name is Guilherme Oliveira. I am a student at the WDD231 course.</p>
+            <p>Hello, my name is Guilherme Oliveira. I am a student at the WDD231 course. I enjoy learning new technologies and building web applications. Some other things
+            about me include going to the gym, reading, playing games and watching movies with my wife.</p>
         </section>
         <section>
             <h2>Student Photo</h2>
+            <img src="images/student_photo.svg.jpeg" alt="Student Photo" width="200" height="200">
         </section>
         <section>
             <h2>Web Certificates</h2>
+            <p>WDD 130</p>
+            <P>WDD 131</P>
+            <p>WDD 231</p>
         </section>
     </main>
     <footer>
         <nav class="links">
             <a href="https://www.linkedin.com/in/guilherme-oliveira-back-dev/">
-                <img src="images/linkedin-icon-logo-png-transparent.svg" alt="LinkedIn Logo" width="30" height="30">
+                <img src="images/linkedin_logo.png" alt="LinkedIn Logo" width="30" height="30">
             </a>
-            <a href="https://github.com/Gu1lh3rm3-0">
+            <a href="https://github.com/Gu1lh3rm3-0/wdd231">
                 <img src="images/Octicons-mark-github.svg" alt="GitHub Logo" width="30" height="30">
             </a>
+            <a href="https://www.instagram.com/guilherme__oliveira02/">
+                <img src="images/instagram_logo.avif" alt="Instagram Logo" width="30" height="30">
+            </a>
         </nav>
+        <p>&copy;<span id="currentyear"></span>| Guilherme Oliveira | Sao Paulo, Brazil</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>

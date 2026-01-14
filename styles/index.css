@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #00118F;
+    --secondary-color: #FFDA1F;
+    --background-color: #F2F2F8;
+    --text-color1: #000000;
+    --text-color2: #ffffff;
+    --font-title: 'Roboto', sans-serif;
+    --font-text: 'PT Serif', serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-title);
+    color: var(--text-color);
+}
+
+p {
+    font-family: var(--font-text);
+    color: var(--text-color);
+}
+
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color2);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+}
+
+header img#logo {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8em;
+    border: #000000 2px solid;
+    width: 200px;
+}
+#menu {
+	
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	color: var(--secondary-color);
+    
+}
+
+#menu::before {
+	content: "≡";
+}
+
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: var(--text-color2);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; 
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
