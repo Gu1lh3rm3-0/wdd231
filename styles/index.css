@@ -72,7 +72,6 @@ header {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 20px;
-	max-width: 1000px;
 }
 .container h1 {
 	grid-column: 1 / 3;
