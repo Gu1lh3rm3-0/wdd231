@@ -19,6 +19,9 @@ h2{
     font-family: var(--font-title);
     color: var(--text-color);
 	background-color: var(--secondary-color);
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+	text-align: center;
 }
 
 h1 {
@@ -108,11 +111,6 @@ header {
 	margin: 1rem;
 }
 
-h2 {
-	padding: 0.5rem;
-	margin-bottom: 0.5rem;
-	text-align: center;
-}
 
 footer {
 	background-color: var(--primary-color);
