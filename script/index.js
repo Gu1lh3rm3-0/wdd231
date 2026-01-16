@@ -1,8 +1,9 @@
-const mainnav = document.querySelector('.navigation')
-const hambutton = document.querySelector('#menu');
+const menu = document.querySelector("#menu");
+const nav = document.querySelector(".navigation");
 
-// Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
-hambutton.addEventListener('click', () => {
-	mainnav.classList.toggle('show');
-	hambutton.classList.toggle('show');
-});
+menu.addEventListener("click", () => {
+    nav.classList.toggle("show");
+    menu.classList.toggle("show");
+})
+
+document.getElementById("lastModified").innerHTML = document.lastModified;
