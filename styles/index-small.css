@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+	.container {
+		grid-template-columns: 1fr;
+	}
+
+	.section-photo {
+		grid-column: 1 / span 1;
+		margin-bottom: 1rem;
+	}
+
+	.section-courses {
+		grid-column: 1 / span 1;
+	}
+
+}
