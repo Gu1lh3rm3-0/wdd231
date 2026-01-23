@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "McDonald's",
+            "address": "Av. Giovanni Grocnhi, 5930, Sao Paulo, SP",
+            "phone": "(11) 4003-3003",
+            "URL": "https://www.mcdonalds.com.br/",
+            "email": "mcdonalds@gmail.com",
+            "membership": "Gold",
+            "logo": "chamber/images/mcdonalds.png"
+        },
+        {
+            "name": "Burger King",
+            "address": "Alameda Tocantins, 350, 10º floor, Alphaville, Barueri, SP",
+            "phone": "555-5678",
+            "URL": "https://www.burgerking.com.br/",
+            "email": "bk@gmail.com",
+            "membership": "Silver",
+            "logo_image": "chamber/images/burger-king.png"
+        },
+        {
+            "name": "Igloo Network",
+            "address": "Av. Maria Coelho Aguiar, 215, Bloc F - 6o. floor, Sao Paulo, SP",
+            "phone": "(11) 3958-6300",
+            "URL": "https://igloo.network/",
+            "email": "hello@igloo.network",
+            "membership": "Silver",
+            "logo": "chamber/images/igloo.png"
+        },
+        {
+            "name": "Polishop",
+            "address": "Rua Kanebo, nº 175, Distrito Industrial, Jundiaí, SP",
+            "phone": "(11) 3444-0009",
+            "URL": "https://www.polishop.com.br/",
+            "email": "sac@polishop.com.br",
+            "membership": "Member",
+            "logo": "chamber/images/polishop-logo.png"
+        },
+        {
+            "name": "Santander",
+            "address": "Av. Cantábria s/n 28660 Boadilla del Monte, Madrid, Spain",
+            "phone": "(91) 276-92-90",
+            "URL": "https://www.santander.com/en/about-us/our-brand",
+            "email": "santander@gmail.com",
+            "membership": "Gold",
+            "logo": "chamber/images/banco-santander-logo.png"
+        },
+        {
+            "name": "Banco do Brasil",
+            "address": "SAUN QD 5 LT B, Asa Norte, Brasília, DF",
+            "phone": "(61) 4004-0001",
+            "URL": "https://www.bb.com.br/site/",
+            "email": "bb@gmail.com",
+            "membership": "Member",
+            "logo": "chamber/images/banco-do-brasil.png"
+        },
+        {
+            "name": "Fluke",
+            "address": "Av. Maria Coelho Aguiar, 215 – Bloco G, 1º floor Sao Paulo, SP",
+            "phone": "(11) 3530-8901",
+            "URL": "https://www.fluke.com/pt-br",
+            "email": "insidesales-br@fluke.com",
+            "membership": "Silver",
+            "logo": "chamber/images/fluke-logo.png"
+        }
+    ]
+}
