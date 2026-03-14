@@ -1,6 +1,6 @@
 :root {
     --primary-color: #071108;
-    --secondary-color: #C7DBE6;
+    --secondary-color: #85EEFE;
     --background-color: #F2F2F8;
     --text-color1: #000000;
     --text-color2: #ffffff;
@@ -57,7 +57,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding: 1rem 2rem;
+	padding: 0.5rem;
 	background-color: var(--primary-color);
 	list-style: none;
 }
@@ -108,6 +108,13 @@ header {
 	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	gap: 10px;
 	margin: 1rem;
+}
+
+.course-credit {
+	text-align: center;
+	font-size: 1.2rem;
+	color: var(--text-color1);
+	margin-top: 1rem;
 }
 
 
