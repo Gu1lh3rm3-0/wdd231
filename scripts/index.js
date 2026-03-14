@@ -8,6 +8,14 @@ const courses = [
     { name: "CSE 212", category: "cse", credit: 2 }
 ];
 
+addEventListener('click', event => {
+    if (event.target.classList.contains("filter-btn")) {
+        const category = event.target.getAttribute("data-filter");
+        filter(category);
+    }
+});
+
+
 function filter(category) {
     let filteredCourses;
 
