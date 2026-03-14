@@ -8,13 +8,13 @@ const courses = [
     { name: "CSE 212", category: "cse", credit: 2 }
 ];
 
-addEventListener('click', event => {
-    if (event.target.classList.contains("filter-btn")) {
-        const category = event.target.getAttribute("data-filter");
-        filter(category);
-    }
-});
+const filterAll = document.querySelector(".filter-all");
+const filterCSE = document.querySelector(".filter-cse");
+const filterWDD = document.querySelector(".filter-wdd");
 
+filterAll.addEventListener("click", () => filter("all"));
+filterCSE.addEventListener("click", () => filter("cse"));
+filterWDD.addEventListener("click", () => filter("wdd"));
 
 function filter(category) {
     let filteredCourses;
@@ -24,7 +24,6 @@ function filter(category) {
     } else {
         filteredCourses = courses.filter(course => course.category === category);
     }
-
     showCourses(filteredCourses);
 }
 
