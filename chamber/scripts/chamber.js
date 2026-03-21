@@ -30,7 +30,7 @@ const displayCompanies = (companies) => {
         membership.textContent = company.membership;
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '200');
-        image.setAttribute("src", company.logo);
+        image.setAttribute('src', `${company.logo}`);
         image.setAttribute('alt', `Logo of ${company.name}`);
 
         card.appendChild(name);
