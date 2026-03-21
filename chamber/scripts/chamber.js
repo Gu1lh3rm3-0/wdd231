@@ -33,8 +33,8 @@ const displayCompanies = (companies) => {
         image.setAttribute("src", company.logo);
         image.setAttribute('alt', `Logo of ${company.name}`);
 
-        card.appendChild(image);
         card.appendChild(name);
+        card.appendChild(image);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(url);
