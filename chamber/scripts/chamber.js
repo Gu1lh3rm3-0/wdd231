@@ -17,7 +17,7 @@ const displayCompanies = (companies) => {
         let phone = document.createElement("p");
         let url = document.createElement("a");
         let email = document.createElement("a");
-        let membership = document.createElement("a");
+        let membership = document.createElement("p");
         let image = document.createElement("img");
 
         name.textContent = company.name;
@@ -27,7 +27,7 @@ const displayCompanies = (companies) => {
         url.setAttribute("href", company.url);
         email.textContent = company.email;
         email.setAttribute("href", `E-mail:${company.email}`);
-        membership.textContent = company.membership;
+        membership.textContent = (`Membership Level: ${company.membership}`);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '200');
         image.setAttribute('src', `${company.logo}`);
@@ -44,4 +44,29 @@ const displayCompanies = (companies) => {
     });
 }
 
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector(".cards");
+
+gridbutton.addEventListener("click", () => {
+	display.classList.add("grid");
+    display.classList.remove("list");
+    
+});
+
+listbutton.addEventListener("click", showList); 
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
+const btn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+
+btn.addEventListener("click", () => {
+  btn.classList.toggle("active");
+  menu.classList.toggle("active");
+});
+
 document.getElementById("lastModified").innerHTML = document.lastModified;
+document.getElementById("currentyear").textContent = new Date().getFullYear();

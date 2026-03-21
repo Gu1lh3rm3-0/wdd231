@@ -14,7 +14,25 @@
     <script src="scripts/chamber.js" defer></script>
 </head>
 <body>
+    <header>
+        <img src="images/website_logo.svg" alt="Chamber Logo" width="50" height="50">
+        <span class="title">Sao Paulo Chamber of Commerce</span>
+        <button id="menu-btn" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="menu" class="menu">
+             <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Chamber</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
+        <button id="grid">Grid</button>
+        <button id="list">List</button>
         <div class="cards"></div>
     </main>
     <footer>
@@ -43,9 +61,8 @@
         <section>
             <div class="copy">
                 <h2>WDD 231 - Class Project</h2>
-                <p>Guilherme Oliveira</p>
-                <p id="copyright"></p>
-                <p id="lastModified"></p>
+                <p>&copy;<span id="currentyear"></span>| Guilherme Oliveira | Sao Paulo, Brazil</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
             </div>
         </section>
     </footer>
