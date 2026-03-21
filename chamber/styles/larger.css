@@ -170,6 +170,7 @@ img {
 footer {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     text-align: center;
     padding: 1rem;
     background-color: var(--primary-color);
