@@ -43,6 +43,10 @@ p {
 }
 
 header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
 	background-color: var(--background-color);
 	align-items: center;
 }
@@ -164,8 +168,8 @@ img {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     text-align: center;
     padding: 1rem;
     background-color: var(--primary-color);
