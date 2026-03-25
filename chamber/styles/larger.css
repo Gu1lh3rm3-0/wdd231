@@ -171,3 +171,29 @@ footer {
     background-color: var(--primary-color);
     color: var(--text-color2);
 }
+
+.hero-container {
+	position: relative;
+	display: flex;
+	justify-content: end;
+	align-items: end;
+	margin-bottom: 1rem;
+}
+
+.hero {
+	width: 100%;
+	height: auto;
+	max-height: 400px;
+	object-fit: cover;
+}
+
+.hero-container a {
+	margin-bottom: 2rem;
+	padding: 0.5rem;
+	position: absolute;
+	text-decoration: none;
+	border-radius: 3px;
+	background-color: var(--secondary-color);
+	color: var(--text-color1);
+}
+

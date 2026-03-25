@@ -1,3 +1,4 @@
+// Fetching data from JSON file and displaying it on the page
 const cards = document.querySelector('.cards');
 const members = 'https://gu1lh3rm3-0.github.io/wdd231/chamber/data/members.json';
 
@@ -44,28 +45,67 @@ const displayCompanies = (companies) => {
     });
 }
 
+// Directory // Grid and List View
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector(".cards");
 
 gridbutton.addEventListener("click", () => {
-	display.classList.add("grid");
+    display.classList.add("grid");
     display.classList.remove("list");
-    
+
 });
 
-listbutton.addEventListener("click", showList); 
+// Hamburger Menu
+listbutton.addEventListener("click", showList);
 
 function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
+    display.classList.add("list");
+    display.classList.remove("grid");
 }
 const btn = document.getElementById("menu-btn");
 const menu = document.getElementById("menu");
 
 btn.addEventListener("click", () => {
-  btn.classList.toggle("active");
-  menu.classList.toggle("active");
+    btn.classList.toggle("active");
+    menu.classList.toggle("active");
 });
+
+// Footer // Last Modified Date and Current Year
 document.getElementById("lastModified").innerHTML = document.lastModified;
 document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+// Wheather API
+
+const town = document.querySelector("#town");
+const graphic = document.querySelector("#graphic");
+const description = document.querySelector("#description");
+const temp = document.querySelector("#temperature");
+
+const key = "0c6e110cf0689e7250abc2a43c094b33"
+const lat = -23.6820636
+const lon = -46.9249429
+
+const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=imperial`
+
+async function apiFetch() {
+    try {
+        const response = await fetch(apiURL);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data); // testing only
+            // displayResults(data); // uncomment when ready
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+apiFetch();
+
+function displayResults(weatherData) {
+    console.log(weatherData);
+    town.innerHTML = weatherData.name;
+}
