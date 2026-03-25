@@ -197,3 +197,9 @@ footer {
 	color: var(--text-color1);
 }
 
+#town {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+	color: #000;
+}
