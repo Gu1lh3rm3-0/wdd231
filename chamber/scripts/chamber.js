@@ -56,13 +56,13 @@ gridbutton.addEventListener("click", () => {
 
 });
 
-// Hamburger Menu
 listbutton.addEventListener("click", showList);
 
 function showList() {
     display.classList.add("list");
     display.classList.remove("grid");
 }
+// Hamburger Menu
 const btn = document.getElementById("menu-btn");
 const menu = document.getElementById("menu");
 
@@ -74,3 +74,4 @@ btn.addEventListener("click", () => {
 // Footer // Last Modified Date and Current Year
 document.getElementById("lastModified").innerHTML = document.lastModified;
 document.getElementById("currentyear").textContent = new Date().getFullYear();
+

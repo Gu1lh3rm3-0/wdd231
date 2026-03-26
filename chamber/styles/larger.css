@@ -28,6 +28,11 @@ h1{
 	margin: 1rem 0;
 }
 
+p, a, span {
+	font-family: var(--font-text);
+	color: var(--text-color);
+}
+
 .title {
 	text-align: center;
 	color: var(--primary-color);
@@ -117,44 +122,47 @@ header {
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	grid-gap: 4px;
 	align-items: center;
-
-	section {
-		text-align: center;
-		margin: 0.25rem;
-	}
-
-	img {
-		border: 1px solid #fff;
-		box-shadow: 0 0 1rem #555;
-	}
-    h2 {
-        background-color: var(--secondary-color);
-    }
+}
+.grid section {
+	background-color: var(--background-color);
+	text-align: center;
+	margin: 0.25rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
 }
 
-.list {
-	display: flex;
-	flex-direction: column;
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 1rem #555;
+}
 
-	section {
-		display: grid;
-		grid-template-columns: 2fr 1fr 1fr;
-		margin: 0;
-		padding: 0.25rem;
-		margin: 0 1rem;
+.grid h2 {
+	background-color: var(--secondary-color);
+	border-radius: 0.5rem;
+	box-shadow: inset 0 0 0.5rem #00000055;
+}
 
-		img {
-			display: none;
-		}
+.list section { 
+    display: grid; 
+    grid-template-columns: 2fr 1fr 1fr; 
+    padding: 0.25rem; 
+    margin: 0 1rem; 
+}
 
-		h2 {
-			font-size: 2rem;
-		}
+.list section img { 
+    display: none; 
+}
 
-		&:nth-child(even) {
-			background-color: #bbb;
-		}
-	}
+.list section h2 { 
+    font-size: 2rem; 
+}
+
+.list section:nth-child(even) { 
+    background-color: #bbb; 
+}
+
+.list h2 {
+	font-size: 2rem;
 }
 
 img {
@@ -195,11 +203,49 @@ footer {
 	border-radius: 3px;
 	background-color: var(--secondary-color);
 	color: var(--text-color1);
+	box-shadow: inset 0 0 0.5rem #00000055;
 }
 
-#town {
+.current-weather, .weather-forecast, .events{
+	display: block;
+	text-align: center;
+	padding: 1rem;
+	background-color: var(--secondary-color);
+	border-radius: 5px;
+	box-shadow: inset 0 0 0.5rem #00000055;
+}
+
+.current-weather h2, .weather-forecast h2, .events h2 {
 	font-size: 1.5rem;
-	font-weight: bold;
+	background-color: var(--background-color);
+	border-radius: 1rem;
+	box-shadow: inset 0 0 0.5rem #00000055;
+}
+
+.section1 {	
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1rem;
+	margin: 1rem 0;
+}
+
+.companies1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	text-align: center;
+	gap: 1rem;
+	margin: 1rem 0;
+}
+
+.companies1 section {
+	padding: 0.5rem;
+	background-color: var(--background-color);
+	border-radius: 5px;
+	box-shadow: inset 0 0 0.5rem #00000055;
+}
+
+.companies1 h2 {
 	margin-bottom: 0.5rem;
-	color: #000;
+	background-color: var(--secondary-color);
+	border-radius: 1rem;
 }
