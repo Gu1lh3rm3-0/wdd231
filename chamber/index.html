@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>São Paulo Chamber of Commerce</title>
+    <title>São Paulo Chamber of Commerce - Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Guilherme Oliveira">
-    <meta name="description" content="This is the home page of the Sao Paulo Chamber of Commerce website, providing information about upcoming events, current weather, and featured companies.">
+    <meta property="og:description" content="This is the home page of the Sao Paulo Chamber of Commerce website, providing information about upcoming events, current weather, and featured companies.">
     <meta property="og:title" content="Chamber Directory Page">
     <meta property="og:image" content="https://gu1lh3rm3-0.github.io/wdd231/chamber/images/galaxy_icon.png">
     <meta property="og:url" content="https://github.com/Gu1lh3rm3-0/wdd231/tree/main/chamber">
@@ -20,7 +20,7 @@
 <body>
     <header>
         <img src="images/website_logo.svg" alt="Chamber Logo" width="50" height="50">
-        <h1>Sao Paulo Chamber of Commerce</h1>
+        <span class="title">Sao Paulo Chamber of Commerce</span>
         <button id="menu-btn" class="hamburger">
             <span></span>
             <span></span>
@@ -39,7 +39,7 @@
         <img class="hero" src="images/saopaulo.jpg" alt="Sao Paulo City">
         <a href="joinus.html">Keynote Tickets</a>
        </div>
-       <h2>Home</h2>
+       <h1>Home</h1>
        <section class="section1">
         <div class="events">
             <h2>Upcoming Events</h2>
@@ -49,7 +49,7 @@
         </div>
         <div class="current-weather">
             <h2 id="town"></h2>
-            <img id="graphic" src="" alt="">
+            <img id="graphic">
             <p id="temperature"></p>
             <p id="description"></p>
             <p id="high"></p>
@@ -62,7 +62,7 @@
             <h2>Weather Forecast</h2>
             <p id="today"></p>
             <p id="tomorrow"></p>
-            <P id="day3"></P>
+            <p id="day3"></p>
         </div>
        </section>
        <section>

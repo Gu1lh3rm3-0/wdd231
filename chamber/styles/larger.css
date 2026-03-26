@@ -28,7 +28,7 @@ h1{
 	margin: 1rem 0;
 }
 
-p, a, span {
+p, a {
 	font-family: var(--font-text);
 	color: var(--text-color);
 }
@@ -36,10 +36,10 @@ p, a, span {
 .title {
 	text-align: center;
 	color: var(--primary-color);
-	font-size: 36px;
+	font-family: var(--font-title);
+	font-size: 2.5rem;
 	margin: 1rem 0;
 	position: relative;
-    bottom: 20px;
 }
 
 p {
