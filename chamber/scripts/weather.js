@@ -1,7 +1,7 @@
 // Wheather API
 
+const graphic = document.createElement("img");
 const town = document.querySelector("#town");
-const graphic = document.querySelector("#graphic");
 const temp = document.querySelector("#temperature");
 const description = document.querySelector("#description");
 const high = document.querySelector("#high");
@@ -14,8 +14,8 @@ const tomorrow = document.querySelector("#tomorrow");
 const afterTomorrow = document.querySelector("#day3");
 
 const key = "0c6e110cf0689e7250abc2a43c094b33"
-const lat = -23.6820636
-const lon = -46.9249429
+const lat = -23.5489
+const lon = -46.6388
 
 const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=imperial`
 
@@ -28,6 +28,10 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
+    const iconsrc = `https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}@2x.png`
+    graphic.setAttribute('src', iconsrc);
+    graphic.setAttribute('alt', data.weather[0].description);
+    document.querySelector(".current-weather").appendChild(graphic);
     town.innerHTML = data.name
     description.innerHTML = data.weather[0].description
     temp.innerHTML = `${data.main.temp.toFixed(0)}&deg;F`
@@ -36,9 +40,7 @@ function displayResults(data) {
     humidity.innerHTML = `Humidity: ${data.main.humidity}%`
     sunrise.innerHTML = `Sunrise: ${new Date(data.sys.sunrise * 1000).toLocaleTimeString()}`
     sunset.innerHTML = `Sunset: ${new Date(data.sys.sunset * 1000).toLocaleTimeString()}`
-    const iconsrc = `https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}@2x.png`
-    graphic.setAttribute('src', iconsrc);
-    graphic.setAttribute('alt', description.innerHTML);
+
 
     today.innerHTML = `Today: ${data.main.temp.toFixed(0)}&deg;F`
     const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}&units=imperial`
