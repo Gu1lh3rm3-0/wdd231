@@ -16,7 +16,6 @@
 
 h2{
     font-family: var(--font-title);
-    color: var(--text-color);
 	padding: 0.5rem;
 	margin-bottom: 0.5rem;
 	text-align: center;
@@ -24,13 +23,12 @@ h2{
 
 h1{
 	font-family: var(--font-title);
-	color: var(--text-color);
+	color: var(--text-color1);
 	margin: 1rem 0;
 }
 
 p, a {
 	font-family: var(--font-text);
-	color: var(--text-color);
 }
 
 .title {
@@ -42,10 +40,6 @@ p, a {
 	position: relative;
 }
 
-p {
-    font-family: var(--font-text);
-    color: var(--text-color);
-}
 
 header {
     display: flex;
@@ -98,12 +92,32 @@ header {
 	padding: 0.5rem;
 	background-color: var(--primary-color);
 	list-style: none;
+	color: var(--text-color2);
+}
+
+.navigation li {
+	margin: 0 0.5rem;
+	color: var(--text-color2);
+}
+
+.navigation h2 {
+	font-size: 1.5rem;
+	color: var(--text-color2);
+	margin: 0;
 }
 
 .navigation a {
 	color: var(--text-color2);
 	text-decoration: none;
-	margin: 0 0.5rem;
+	padding: 0.5rem;
+	border-radius: 3px;
+	transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+	background-color: var(--secondary-color);
+	color: var(--text-color1);
+	box-shadow: inset 0 0 0.5rem #00000055;
 }
 
 #grid, #list {
@@ -292,7 +306,7 @@ form {
 
 label {
 	font-family: var(--font-text);
-	color: var(--text-color);
+	color: var(--text-color1);
 }
 
 input {
@@ -349,6 +363,7 @@ textarea {
 	flex-direction: column;
 	align-items: center;
 	padding: 1rem;
+	animation: up 3s alternate infinite;
 }
 
 .membership h2 {
@@ -409,8 +424,4 @@ dialog::backdrop {
 @keyframes up {
   0% { transform: translateY(0); }
   100% { transform: translateY(-50px); }
-}
-
-.membership {
-  animation: up 3s alternate infinite;
 }
