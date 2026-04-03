@@ -35,7 +35,6 @@
             </ul>
         </nav>
     </header>
-<body>
     <main>
     <h1>Join Us</h1>
     <section class="join-page">
@@ -43,7 +42,7 @@
             <h2>Fill Out the Form Below</h2>
             <fieldset class="joinForm">
                 <legend>Join Our Chamber</legend>
-                <form method="GET" id="joinForm" action="thankyou.html" method="post">
+                <form method="GET" id="joinForm" action="thankyou.html">
                     <label for="firstName">Name:</label>
                     <input type="text" id="firstName" name="firstName" title="firstName" autocomplete="given-name" required>
 
@@ -51,16 +50,16 @@
                     <input type="text" id="lastName" name="lastName" title="lastName" autocomplete="family-name" required>
 
                     <label for="organizationalTitle">Organizational Title:</label>
-                    <input type="text" id="organizationalTitle" name="organizationalTitle" title="organizationalTitle" autocomplete="organization" required>
+                    <input type="text" id="organizationalTitle" name="organizationalTitle" title="organizationalTitle" autocomplete="organization-title" required>
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" type="email" title="email" autocomplete="email" placeholder="example@email.com" required>
+                    <input type="email" id="email" name="email" title="email" autocomplete="email" placeholder="example@email.com" required>
 
                     <label for="phone">Phone:</label>
                     <input type="tel" id="phone" name="phone" title="phone" autocomplete="tel" required>
 
                     <label for="companyName">Company Name:</label>
-                    <input type="text" id="companyName" name="companyName" title="companyName" autocomplete="organization" required>
+                    <input type="text" id="companyName" name="companyName" title="companyName" autocomplete="company" required>
 
                     <label for="membership">Membership Level:</label>
                     <select id="membership" name="membership" title="membership" required>
