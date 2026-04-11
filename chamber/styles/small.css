@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 640px) {
     
 .navigation {
 	display: block;
@@ -19,4 +19,50 @@
   .hamburger {
     display: none;
   }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#discover-cards div {
+  margin: 1rem 8px;
+  border: solid 1px var(--primary-color);
+  background-color: var(--primary-color);
+  overflow: hidden;
+
+  display: grid;
+  grid-template-areas: 
+  "name"
+  "photo"
+  "address"
+  "description";
+}
+
+#discover-cards div p {
+  grid-area: description;
+  padding: 0.5rem;
+  color: var(--text-color2); 
+}
+
+#discover-cards div figure {
+  grid-area: photo;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+#discover-cards div h2 {
+  grid-area: name;
+  color: var(--text-color2);
+  padding: 0.5rem;
+  margin: 0;
+}
+
+#discover-cards div address {
+  grid-area: address;
+  color: var(--text-color2);
+  padding: 0.5rem;
+  margin: 0;
 }
