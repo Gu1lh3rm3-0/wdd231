@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Ibirapuera Park Trails",
+    "images": ["https://ipiranganews.inf.br/wp-content/uploads/Pista-de-cooper-2017-6.jpg"],
+    "description": "Tree-lined paths ideal for walking, jogging, and enjoying nature in the heart of São Paulo.",
+    "average_cost": "Free"
+  },
+  {
+    "name": "Museum of Modern Art of São Paulo (MAM)",
+    "images": ["https://www.saopaulo.com.br/wp-content/uploads/2013/12/museu-de-arte-moderna-de-s%C3%A3o-paulo.jpg"],
+    "description": "A leading museum featuring modern and contemporary Brazilian art exhibitions.",
+    "average_cost": "$5–$10 USD (may be free on certain days)"
+  },
+  {
+    "name": "Afro Brazil Museum",
+    "images": ["https://vidasemparedes.com.br/wp-content/uploads/2017/10/Vida-sem-Paredes-atra%C3%A7%C3%B5es-no-Parque-Ibirapuera-7.jpg"],
+    "description": "A cultural museum dedicated to Afro-Brazilian history, art, and heritage.",
+    "average_cost": "$5–$10 USD (may be free on certain days)"
+  },
+  {
+    "name": "Japanese Garden (Jardim Japonês)",
+    "images": ["https://cidadedesaopaulo.com/wp-content/uploads/2024/02/cidadedesaopaulo.com-pavilhao-japones-cidadedesaopaulo.com-pavilhao-japones-107-pavilhao-japones-768x510.webp"],
+    "description": "A tranquil garden with traditional Japanese landscaping, ponds, and koi fish.",
+    "average_cost": "Free"
+  },
+  {
+    "name": "Bike Paths",
+    "images": ["https://www.civitatis.com/f/brasil/sao-paulo/galeria/big/esportes-ibirapuera.jpg"],
+    "description": "Dedicated cycling lanes throughout the park, perfect for biking and exploring.",
+    "average_cost": "Free (bike rental ~$3–$10 USD/hour)"
+  },
+  {
+    "name": "Ibirapuera Lake",
+    "images": ["http://parqueibirapuera.org/wp/wp-content/uploads/2013/02/IMG_20140719_160947_117-e1405904836340.jpg"],
+    "description": "A scenic lake where visitors can relax, watch birds, and enjoy sunset views.",
+    "average_cost": "Free"
+  },
+  {
+    "name": "Ibirapuera Auditorium",
+    "images": ["https://upload.wikimedia.org/wikipedia/commons/1/1e/Audit%C3%B3rio_Ibirapuera.JPG"],
+    "description": "An iconic concert hall designed by Oscar Niemeyer, hosting music and cultural events.",
+    "average_cost": "$0–$20 USD depending on the event"
+  },
+  {
+    "name": "Praça da Paz",
+    "images": ["https://ibirapuera.org/wp-content/uploads/2016/02/paz-1170x780.jpg"],
+    "description": "A peaceful open space perfect for picnics, yoga, and relaxation.",
+    "average_cost": "Free"
+  }
+]

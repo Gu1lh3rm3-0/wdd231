@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #005A00;
+    --secondary-color: #d1f3cb;
+    --background-color: #FCFAEE;
+    --background-color2: #E3F6FF;
+    --text-color1: #000000;
+    --text-color2: #ffffff;
+    --font-title: 'Roboto', sans-serif;
+    --font-text: 'PT Serif', serif;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-title);
+    margin: 1rem 0;
+    text-align: center;
+}
+
+p, a, span {
+    font-family: var(--font-text);
+}
+
+.title {
+	text-align: center;
+	color: var(--text-color2);
+	font-family: var(--font-title);
+	font-size: 2.5rem;
+	margin: 1rem 0;
+	position: relative;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+	background-color: var(--primary-color);
+	align-items: center;
+}
+
+.ibira-logo {
+    width: 8rem;
+    height: 8rem;
+    border-color: #FFFFFF;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8rem;
+}
+
+.navigation {
+	font-size: 18px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0.5rem;
+	background-color: var(--primary-color);
+	list-style: none;
+	color: var(--text-color2);
+}
+
+.navigation li {
+	margin: 0 0.5rem;
+	color: var(--text-color2);
+}
+
+.navigation h2 {
+	font-size: 1.5rem;
+	color: var(--text-color2);
+	margin: 0;
+}
+
+.navigation a {
+	color: var(--text-color2);
+	text-decoration: none;
+	padding: 0.5rem;
+	border-radius: 3px;
+	transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+	background-color: var(--secondary-color);
+	color: var(--text-color1);
+	box-shadow: inset 0 0 0.5rem #00000055;
+}
+
+.hamburger {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  background-color: var(--background-color);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.menu.active {
+  display: block;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(7.5px, 7.5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7.5px, -7.5px);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color1);
+}
+
+main {
+    align-items: center;
+}
+
+.hero-container {
+	position: relative;
+	display: flex;
+	justify-content: end;
+	align-items: end;
+	margin-bottom: 1rem;
+}
+
+.hero {
+	width: 100%;
+	height: auto;
+	max-height: 400px;
+	object-fit: cover;
+}
+
+.current-weather, .weather-forecast, .events{
+	display: block;
+	text-align: center;
+	padding: 1rem;
+	background-color: var(--background-color2);
+	border-radius: 5px;
+	box-shadow: inset 0 0 0.5rem #00000055;
+    color: var(--text-color1);
+}
+
+.current-weather p {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.weather-forecast p {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+
+.events div {
+    margin: 1rem 0;
+    border: solid 1px black;
+    background-color: var(--background-color);
+    color: var(--text-color1);
+    border-radius: 2rem;
+    box-shadow: inset 0 0 0.5rem var(--secondary-color);
+}
+
+.current-weather h2, .weather-forecast h2, .events h2 {
+    color: var(--text-color1);
+	font-size: 1.5rem;
+	background-color: var(--secondary-color);
+	border-radius: 1rem;
+	box-shadow: inset 0 0 0.5rem #00000055;
+}
+
+.events button {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-color2);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+dialog {
+  border: none;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px); 
+}
+
+dialog {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    display 0.3s allow-discrete; 
+}
+
+dialog[open] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@starting-style {
+  dialog[open] {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.weather-events {	
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1rem;
+	margin: 1rem 0;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.history div {
+    background-color: var(--background-color2);
+    border-radius: 5px;
+    box-shadow: inset 0 0 0.5rem #00000055;
+    padding: 1rem;
+    
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.history iframe {
+    width: 100%;
+    height: 80vh;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-color2);
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.links img {
+	width: auto;
+	height: 75px;
+}

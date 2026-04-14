@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Guilherme Oliveira">
+    <meta name="description" content="The home page for Ibirapuera Park, check it out for upcoming events, the weather and our most valuable partners!">
+    <meta property="og:description" content="The home page for Ibirapuera Park, check it out for upcoming events, the weather and our most valuable partners!">
+    <meta property="og:title" content="Ibirapuera Park - Home">
+    <meta property="og:image" content="https://github.com/Gu1lh3rm3-0/wdd231/blob/main/final/images/logo_ibirapuera.png">
+    <meta property="og:url" content="https://github.com/Gu1lh3rm3-0/wdd231/tree/main/final">
+    <link rel="stylesheet" href="/final/styles/large.css">
+    <link rel="stylesheet" href="/final/styles/small.css">
+    <link rel="icon" href="/final/images/favicon-ibira.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="/final/scripts/index.js" defer></script>
+    <title>Ibirapuera Park - Home</title>
+</head>
+    <header>
+        <img class="ibira-logo" src="/final/images/logo_ibirapuera.png" alt="Ibirapuera Park Logo">
+        <span class="title">Ibirapuera Park</span>
+        <button id="menu-btn" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="menu" class="menu">
+             <ul class="navigation">
+                <li><a href="/final/index.html">Home</a></li>
+                <li><a href="/final/attractions.html">Attractions</a></li>
+                <li><a href="/final/contactus.html">Contact Us</a></li>
+                <li><a href="/final/discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <main>
+        <div class="hero-container">
+            <img class="hero" src="/final/images/parque_Ibirapuera_hero.jpg" alt="Parque Ibirapuera" width="100%" height="auto" loading="lazy">
+        </div>
+        <h1>Welcome to Ibirapuera Park!</h1>
+        <section class="weather-events">
+            <div class="events">
+                <h2>Upcoming Events</h2>
+                <div class="c6">
+                    <h3>C6 Fest 2026 | May 21–24</h3>
+                    <button id="learnC6">Learn More</button>
+                </div>
+                <div class="arena">
+                    <h3>Arena Brasileira | June 13 – July 19</h3>
+                    <button id="learnArena">Learn More</button>
+                </div>
+                <div class="coffee">
+                    <h3>São Paulo Coffee Festival 2026 | June 28</h3>
+                    <button id="learnCoffee">Learn More</button>
+                </div>
+                <dialog id="eventsDialog">
+                    <div></div>
+                <button id="closeDialog">Close</button>
+            </dialog>
+            </div>
+            <div class="current-weather">
+                <h2 id="town"></h2>
+                <p id="temperature"></p>
+                <p id="high"></p>
+                <p id="low"></p>
+                <p id="humidity"></p>
+                <p id="sunrise"></p>
+                <p id="sunset"></p>
+                <p id="description"></p>
+            </div>
+            <div class="weather-forecast">
+                <h2>Weather Forecast</h2>
+                <p id="today"></p>
+                <p id="tomorrow"></p>
+                <p id="day3"></p>
+            </div>
+        </section>
+        <section class="history">
+            <div>
+                <h2>History of Ibirapuera Park</h2>
+                <p>Ibirapuera Park, located in the heart of São Paulo, 
+                Brazil, is one of the most iconic urban parks in the world. It was inaugurated in 1954 to 
+                commemorate the 400th anniversary of the city. The park was designed by the renowned 
+                landscape architect Roberto Burle Marx and features a blend of modernist architecture and lush 
+                greenery. Over the years, Ibirapuera Park has become a cultural hub, hosting numerous events, 
+                concerts, and exhibitions. It is also home to several museums, including the Museum of Modern Art 
+                and the Afro-Brazil Museum. With its beautiful lakes, walking trails, and recreational facilities, 
+                Ibirapuera Park continues to be a beloved destination for both locals and tourists alike.</p>
+                <figure>
+                        <img src="/final/images/ibirapuera-under-construction.jpeg" alt="History of Ibirapuera Park" loading="lazy">
+                        <figcaption>Historic photo of Ibirapuera Park</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <h2>Location</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5171.0530928229755!2d-46.6614060981546!3d-23.586871696328345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f1069d11d1%3A0xcb936109af9ce541!2sParque%20Ibirapuera!5e0!3m2!1spt-BR!2sbr!4v1776200453071!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="address">
+                <h2>Ibirapuera Park</h2>
+                <p>Av. Pedro Álvares Cabral, s/n - Vila Mariana</p>
+                <p>Sao Paulo, SP, 04094-050</p>
+                <a href="https://www.parquedoibirapuera.org/">Ibirapuera Park Official Website</a>
+                <p>Phone: (11) 3889-3000</p>
+            </div>
+        </section>
+        <div>
+            <nav class="links">
+                <a href="https://www.linkedin.com/in/guilherme-deoliveira-dev/">
+                    <img src="/final/images/linkedin-svgrepo-com.svg" alt="LinkedIn Logo" width="30" height="30">
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img src="/final/images/youtube-color-svgrepo-com.svg" alt="YouTube Logo" width="30" height="30">
+                </a>
+                <a href="https://www.instagram.com/guilherme__oliveira02/">
+                    <img src="/final/images/instagram-svgrepo-com.svg" alt="Instagram Logo" width="30" height="30">
+                </a>
+            </nav>
+        </div>
+        <section>
+            <div class="copy">
+                <h2>WDD 231 - Class Project</h2>
+                <p>&copy;<span id="currentyear"></span>| Guilherme Oliveira | Sao Paulo, Brazil</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+                <p><span>Note: This is NOT the official Ibirapuera Park website</span></p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
