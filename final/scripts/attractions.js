@@ -2,9 +2,21 @@ const attractions = 'https://gu1lh3rm3-0.github.io/wdd231/final/data/attractions
 const cards = document.querySelector(".attractions");
 
 async function getAttractionsData() {
-    const response = await fetch(attractions);
-    const data = await response.json();
-    displayAttractions(data.places);
+    try {
+        const response = await fetch(attractions);
+        if (!response.ok) {
+            throw new Error(`Error in request: ${response.status}`);
+        }
+
+        const data = await response.json();
+        displayAttractions(data.places);
+
+    } catch (error) {
+        console.error("There was a problem searching for the attractions:", error);
+        cards.innerHTML = `<p class="error">We were unable to load the attractions at this time.</p>`;
+    } finally {
+        console.log("Search attempt completed.");
+    }
 }
 
 getAttractionsData();

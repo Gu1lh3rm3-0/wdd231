@@ -47,6 +47,48 @@
     "images": ["https://ibirapuera.org/wp-content/uploads/2016/02/paz-1170x780.jpg"],
     "description": "A peaceful open space perfect for picnics, yoga, and relaxation.",
     "average_cost": "Free"
+  },
+  {
+    "name": "Oca (Pavilhão Lucas Nogueira Garcez)",
+    "images": ["https://cidadedesaopaulo.com/wp-content/uploads/2025/06/oca-768x464.jpg"],
+    "description": "A striking white dome designed by Oscar Niemeyer that hosts large-scale art exhibitions and cultural events.",
+    "average_cost": "$0–$10 USD depending on the exhibition"
+  },
+  {
+    "name": "Bienal Pavilion",
+    "images": ["https://s2.glbimg.com/Ogjf6_xZMq3hVZxluT2uoSML5Kc=/620x413/smart/e.glbimg.com/og/ed/f/original/2022/03/11/entre-6-e-10-de-abril-sp-arte-volta-a-acontecer-no-pavilhao-da-bienal.jpg"],
+    "description": "Home to the famous São Paulo Art Biennial and other major exhibitions throughout the year.",
+    "average_cost": "Free–$10 USD depending on the event"
+  },
+  {
+    "name": "Planetarium Professor Aristóteles Orsini",
+    "images": ["https://cidadedesaopaulo.com/wp-content/uploads/2024/02/cidadedesaopaulo.com-planetario-do-ibirapuera-cidadedesaopaulo.com-planetario-do-ibirapuera-109-planetario-do-ibirapuera-768x512.jpg"],
+    "description": "A planetarium offering immersive astronomy shows and educational experiences about space.",
+    "average_cost": "$3–$8 USD"
+  },
+  {
+    "name": "Food Court & Cafés",
+    "images": ["https://media-cdn.tripadvisor.com/media/photo-s/22/3f/75/f6/madureira.jpg"],
+    "description": "Various cafés and snack spots where you can enjoy coffee, juices, and Brazilian treats.",
+    "average_cost": "$3–$15 USD"
+  },
+  {
+    "name": "Outdoor Gym Equipment",
+    "images": ["https://f.i.uol.com.br/fotografia/2025/09/22/175858322668d1d9baef01f_1758583226_3x2_md.jpg"],
+    "description": "Free outdoor fitness equipment available for strength training and exercise.",
+    "average_cost": "Free"
+  },
+  {
+    "name": "Skate Area",
+    "images": ["https://gruposulnews.com.br/wp-content/uploads/2022/11/B-compressed-1.jpg"],
+    "description": "A popular area for skateboarding and rollerblading, suitable for different skill levels.",
+    "average_cost": "Free"
+  },
+  {
+    "name": "Viveiro Manequinho Lopes",
+    "images": ["https://urbia-cms-assets.s3.amazonaws.com/homolog/manequinho_lopes_viveiro_1_82b14e7e54.jpg"],
+    "description": "A plant nursery that cultivates native species and contributes to the park's biodiversity.",
+    "average_cost": "Free"
   }
 ]
 }
