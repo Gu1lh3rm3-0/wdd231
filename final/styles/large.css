@@ -41,6 +41,7 @@ header {
     justify-content: space-between;
     padding: 0.5rem 1rem;
 	background-color: var(--primary-color);
+    color: var(--text-color2);
 	align-items: center;
 }
 
