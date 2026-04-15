@@ -233,20 +233,9 @@ dialog {
   transition: 
     opacity 0.3s ease,
     transform 0.3s ease,
-    display 0.3s allow-discrete; 
+    display 0.3s ease; 
 }
 
-dialog[open] {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@starting-style {
-  dialog[open] {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-}
 
 .weather-events {	
 	display: grid;
@@ -293,7 +282,6 @@ dialog[open] {
     background-color: var(--primary-color);
     color: #fff;
     border: none;
-    border-color: 1px solid #000000;
     border-radius: 4px;
 }
 
