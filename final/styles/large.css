@@ -477,3 +477,8 @@ textarea {
     padding: 3rem;
     margin: 3rem;
 }
+
+.address a, .copy a {
+    color: var(--text-color2);
+    font-size: 1.2rem;
+} 
