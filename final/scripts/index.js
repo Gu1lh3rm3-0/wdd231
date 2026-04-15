@@ -91,5 +91,33 @@ closeButton.addEventListener("click", () => {
     dialog.close();
 });
 
+const messageContainer = document.querySelector("#message");
+
+const lastVisit = localStorage.getItem("lastVisit");
+
+const now = Date.now();
+
+let message = "";
+
+if (!lastVisit) {
+  message = "Welcome! Let us know if you have any questions.";
+} else {
+  const lastVisitTime = parseInt(lastVisit);
+  const diffTime = now - lastVisitTime;
+
+  const oneDay = 1000 * 60 * 60 * 24;
+  const daysBetween = Math.floor(diffTime / oneDay);
+
+  if (daysBetween < 1) {
+    message = "Back so soon! Awesome!";
+  } else if (daysBetween === 1) {
+    message = "You last visited 1 day ago.";
+  } else {
+    message = `You last visited ${daysBetween} days ago.`;
+  }
+}
+messageContainer.textContent = message;
+localStorage.setItem("lastVisit", now);
+
 document.getElementById("lastModified").innerHTML = document.lastModified;
 document.getElementById("currentyear").textContent = new Date().getFullYear();

@@ -46,7 +46,7 @@ header {
 }
 
 .active {
-  background-color: midnightblue;
+    background-color: midnightblue;
 }
 
 .ibira-logo {
@@ -221,14 +221,6 @@ dialog {
   max-width: 500px;
   margin: auto;
   overflow: hidden;
-}
-
-dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px); 
-}
-
-dialog {
   opacity: 0;
   transform: translateY(20px);
   transition: 
@@ -237,6 +229,10 @@ dialog {
     display 0.3s ease; 
 }
 
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px); 
+}
 
 .weather-events {	
 	display: grid;
@@ -358,4 +354,121 @@ footer {
 .links img {
 	width: auto;
 	height: 75px;
+}
+
+#discover {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+#discover div img {
+  width: 100%;
+  height: 100%;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+}
+
+.form-container h2 {
+	font-size: 1.5rem;
+	background-color: var(--secondary-color);
+	border-radius: 1rem;
+	box-shadow: inset 0 0 0.5rem #00000055;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+legend {
+	background-color: var(--secondary-color);
+	font-family: var(--font-title);
+	color: var(--text-color1);
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	box-shadow: inset 0 0 0.5rem grey;
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	padding: .5rem;
+}
+
+label {
+	font-family: var(--font-text);
+	color: var(--text-color1);
+}
+
+input {
+	display: flex;
+	justify-content: center;
+	padding: 0.3rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 1rem;
+}
+
+.contact-form {
+	background-color: var(--background-color2);
+	border-radius: 5px;
+	box-shadow: inset 0 0 0.5rem #00000055;
+	padding: 1rem;
+	width: auto;
+}
+
+select {
+	padding: 0.3rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 1rem;
+}
+
+textarea {
+	padding: 0.3rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 1rem;
+}
+
+.contact-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+#submit {
+	padding: 0.5rem;
+	font-size: 1rem;
+	cursor: pointer;
+	background-color: var(--secondary-color);
+	color: var(--text-color1);
+	border: none;
+	box-shadow: inset 0 0 0.5rem grey;
+	border-radius: 4px;
+}
+
+#thankYou {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--text-color1);
+    font-size: 2rem;
+}
+
+.thankyou-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    margin: 3rem;
 }

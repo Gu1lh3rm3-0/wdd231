@@ -7,7 +7,7 @@
     <meta name="description" content="The contact page for Ibirapuera Park, get in touch with us for any inquiries or feedback!">
     <meta property="og:description" content="The contact page for Ibirapuera Park, get in touch with us for any inquiries or feedback!">
     <meta property="og:title" content="Ibirapuera Park - Contact Us">
-    <meta property="og:image" content="https://github.com/Gu1lh3rm3-0/wdd231/blob/main/final/images/logo_ibirapuera.png">
+    <meta property="og:image" content="https://gu1lh3rm3-0.github.io/wdd231/final/images/logo_ibirapuera.png">
     <meta property="og:url" content="https://github.com/Gu1lh3rm3-0/wdd231/tree/main/final">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -20,7 +20,7 @@
 </head>
 <body>
     <header>
-        <img src="images/logo_ibirapuera.png" alt="Ibirapuera Park Logo" width="50" height="50">
+        <img class="ibira-logo" src="images/logo_ibirapuera.webp" alt="Ibirapuera Park Logo" width="50" height="50">
         <span class="title">Ibirapuera Park</span>
         <button id="menu-btn" class="hamburger">
             <span></span>
@@ -31,13 +31,56 @@
              <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="attractions.html">Attractions</a></li>
-                <li><a href="contactus.html" class="active">Contact Us</a></li>
+                <li class="active"><a href="contactus.html">Contact Us</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="contact-main">
+    <h1>Organize an Event at Ibirapuera Park</h1>
+    <p>Have questions or interested in organizing an event at Ibirapuera Park? Fill out the form below and we'll get back to you as soon as possible!</p>
+    <section class="event-form">
+        <div class="form-container">
+            <h2>Send Us a Message!</h2>
+            <fieldset class="contact-form">
+                <legend>Contact Form</legend>
+                <form method="GET" id="eventForm" action="thankyou.html">
+                    <label for="firstName">Name:</label>
+                    <input type="text" id="firstName" name="firstName" title="firstName" autocomplete="given-name" required>
 
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" title="lastName" autocomplete="family-name" required>
+
+                    <label for="organizationalTitle">Organizational Title:</label>
+                    <input type="text" id="organizationalTitle" name="organizationalTitle" title="organizationalTitle" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" title="email" autocomplete="email" placeholder="example@email.com" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" title="phone" autocomplete="tel" required>
+
+                    <label for="companyName">Company Name:</label>
+                    <input type="text" id="companyName" name="companyName" title="companyName" autocomplete="organization" required>
+
+                    <label for="purpose">Purpose:</label>
+                    <select id="purpose" name="purpose" title="purpose" required>
+                        <option value="">Select a purpose</option>
+                        <option value="festival">Festival</option>
+                        <option value="meeting">Meeting</option>
+                        <option value="show">Show</option>
+                        <option value="workshop">Workshop</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" title="description" rows="4" cols="50"></textarea>
+
+                    <button type="submit" id="submit">Send Request</button>
+                 </form>
+            </fieldset>
+        </div>
+    </section>
     </main>
     <footer>
         <section>

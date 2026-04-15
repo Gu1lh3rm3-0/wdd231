@@ -1,0 +1,10 @@
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    #discover div {
+    grid-template-areas: 
+    "name photo"
+    "photo address"
+    "photo description"
+    "photo cost";
+    }
+    
+}
