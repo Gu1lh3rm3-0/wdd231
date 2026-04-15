@@ -15,13 +15,46 @@ const displayAttractions = (places) => {
         let name = document.createElement("h2");
         let description = document.createElement("p");
         let cost = document.createElement("p");
+        let image = document.createElement("img");
         name.textContent = place.name;
         description.textContent = place.description;
         cost.textContent = `Average Cost: ${place.average_cost}`;
+        image.src = place.images[0];
+        image.alt = place.name;
+        image.loading = "lazy";
         card.appendChild(name);
+        card.appendChild(image);
         card.appendChild(description);
         card.appendChild(cost);
         cards.appendChild(card);
     });
 }
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector(".attractions");
+
+gridbutton.addEventListener("click", () => {
+    display.classList.add("grid");
+    display.classList.remove("list");
+
+});
+
+listbutton.addEventListener("click", showList);
+
+function showList() {
+    display.classList.add("list");
+    display.classList.remove("grid");
+}
+
+const btn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+
+btn.addEventListener("click", () => {
+    btn.classList.toggle("active");
+    menu.classList.toggle("active");
+});
+
+document.getElementById("lastModified").innerHTML = document.lastModified;
+document.getElementById("currentyear").textContent = new Date().getFullYear();
 

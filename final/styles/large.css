@@ -193,7 +193,18 @@ main {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    animation: size 2.5s linear infinite;
+}
+
+@keyframes size {
+    from, to {
+        scale: 100%;
+    }
+
+    50% {
+        scale: 105%;
+    }
+    
 }
 
 dialog {
@@ -267,6 +278,70 @@ dialog[open] {
     height: 80vh;
     border: none;
     border-radius: 5px;
+}
+
+#grid, #list {
+    position: relative;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-color: 1px solid #000000;
+    border-radius: 4px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: 4px;
+	align-items: center;
+}
+.grid section {
+	background-color: var(--background-color2);
+	text-align: center;
+	margin: 0.25rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+    box-shadow: inset 0 0 0.5rem #00000055;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+	border: 1px solid #fff;
+	box-shadow: 0 0 1rem #555;
+}
+
+.grid h2 {
+	background-color: var(--secondary-color);
+	border-radius: 0.5rem;
+	box-shadow: inset 0 0 0.5rem #00000055;
+}
+
+.list section { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    padding: 0.25rem; 
+    margin: 0 1rem; 
+}
+
+.list section img { 
+    display: none; 
+}
+
+.list section h2 { 
+    font-size: 2rem; 
+}
+
+.list section:nth-child(even) { 
+    background-color: #bbb; 
+}
+
+.list h2 {
+	font-size: 2rem;
 }
 
 footer {
